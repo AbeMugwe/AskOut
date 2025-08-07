@@ -27,6 +27,7 @@ body{
       animation: walkAcross 10s linear infinite;
     }
 
+
 @keyframes walkAcross {
     0% {
         left: -100px;
@@ -42,6 +43,12 @@ body{
     flex-direction: column;
     width: 700px;
     margin-left: 300px;
+}
+@media(max-width: 480px){
+  .text{
+    width: 95%;
+    margin-left: 0%;
+  }
 }
 
 

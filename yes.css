@@ -12,7 +12,7 @@ body{
 .img1{
     height: 600px;
     width: 400px;
-    object-fit: contain;
+    object-fit: over;
     >img{
         height: 100%;
         width: 100%;
@@ -20,6 +20,7 @@ body{
         
     }
 }
+
 .img2{
     height: 600px;
     width: 400px;
@@ -35,7 +36,7 @@ body{
 .container{
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 20px;
     left:-100px;
     position: relative; /* Important for animation */
     animation: walkAcross 10s linear infinite;
