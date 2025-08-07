@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubbler+One&family=Caprasimo&display=swap');
+
+body{
+    font-family: "Caprasimo", serif;
+    justify-content: center;
+    padding: 10px;
+    color:white;
+    overflow: hidden;
+    background-color: black;
+}
+
+.img1{
+    height: 600px;
+    width: 400px;
+    object-fit: contain;
+    >img{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        
+    }
+}
+.img2{
+    height: 600px;
+    width: 400px;
+    object-fit: cover;
+   
+    >img{
+        height: 100%;
+        width: 100%;
+         border-radius: 5px;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    left:-100px;
+    position: relative; /* Important for animation */
+    animation: walkAcross 10s linear infinite;
+}
+
+@keyframes walkAcross {
+     0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(100vw);
+      }
+}
